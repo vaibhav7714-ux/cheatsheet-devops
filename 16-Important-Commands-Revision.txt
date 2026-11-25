@@ -1,0 +1,113 @@
+16-Important-Commands-Revision.txt
+
+================================================
+          DEVOPS QUICK REVISION
+================================================
+
+LINUX
+-----
+pwd
+ls -la
+mkdir
+touch
+chmod
+chown
+ps aux
+top
+df -h
+free -h
+systemctl status
+
+GIT
+---
+git init
+git clone
+git status
+git add .
+git commit
+git push
+git pull
+git branch
+git merge
+git log
+
+DOCKER
+------
+docker images
+docker ps -a
+docker pull
+docker build
+docker run
+docker logs
+docker exec
+docker stop
+docker compose up -d
+docker compose down
+
+KUBERNETES
+----------
+kubectl get nodes
+kubectl get pods
+kubectl get services
+kubectl get deployments
+kubectl describe pod
+kubectl logs
+kubectl apply -f
+kubectl delete -f
+kubectl scale
+
+JENKINS
+-------
+Jenkinsfile
+Pipeline
+Agent
+Stage
+Step
+Build
+Test
+Deploy
+
+TERRAFORM
+---------
+terraform init
+terraform fmt
+terraform validate
+terraform plan
+terraform apply
+terraform destroy
+
+ANSIBLE
+-------
+ansible --version
+ansible all -m ping
+ansible-playbook playbook.yml
+
+AWS
+---
+aws --version
+aws configure
+aws sts get-caller-identity
+aws s3 ls
+
+NETWORKING
+----------
+ping
+curl
+wget
+ip addr
+ss -tuln
+nslookup
+dig
+ssh
+
+MONITORING
+----------
+Prometheus
+Grafana
+ELK
+Loki
+CloudWatch
+
+================================================
+              REVISION COMPLETE
+================================================

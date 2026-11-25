@@ -1,1 +1,77 @@
  09-Terraform.txt
+
+================================================
+                TERRAFORM NOTES
+================================================
+
+WHAT IS TERRAFORM?
+Terraform is an Infrastructure as Code tool.
+
+1. IMPORTANT TERMS
+------------------
+Provider = Cloud or platform integration
+Resource = Infrastructure component
+Variable = Input value
+Output = Result value
+State = Tracks managed resources
+Module = Reusable configuration
+
+2. COMMANDS
+-----------
+terraform version
+terraform init
+terraform fmt
+terraform validate
+terraform plan
+terraform apply
+terraform output
+terraform destroy
+
+3. WORKFLOW
+-----------
+Write configuration
+       |
+       v
+terraform init
+       |
+       v
+terraform fmt
+       |
+       v
+terraform validate
+       |
+       v
+terraform plan
+       |
+       v
+terraform apply
+
+4. EXAMPLE
+----------
+resource "local_file" "example" {
+  filename = "hello.txt"
+  content  = "Hello Terraform"
+}
+
+5. IMPORTANT FILES
+------------------
+main.tf
+variables.tf
+outputs.tf
+terraform.tfvars
+.terraform.lock.hcl
+terraform.tfstate
+
+6. SECURITY
+-----------
+Do not commit secrets or sensitive state files.
+Review plans before applying changes.
+
+PRACTICE:
+1. Install Terraform.
+2. Create a local file resource.
+3. Run terraform init.
+4. Run terraform plan.
+5. Apply and inspect the result.
+
+================================================

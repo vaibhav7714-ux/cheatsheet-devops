@@ -1,1 +1,78 @@
-  06-Kubernetes.txt
+
+================================================
+               KUBERNETES NOTES
+================================================
+
+WHAT IS KUBERNETES?
+Kubernetes is a container orchestration platform
+used to deploy, scale and manage applications.
+
+1. IMPORTANT COMPONENTS
+-----------------------
+Pod = Smallest deployable unit
+Node = Worker machine
+Cluster = Collection of nodes
+Deployment = Manages replicas
+Service = Exposes applications
+ConfigMap = Non-sensitive configuration
+Secret = Sensitive configuration
+Namespace = Resource separation
+Ingress = HTTP/HTTPS routing
+
+2. BASIC COMMANDS
+-----------------
+kubectl version
+kubectl get nodes
+kubectl get pods
+kubectl get pods -A
+kubectl get deployments
+kubectl get services
+kubectl get namespaces
+
+3. CREATE DEPLOYMENT
+--------------------
+kubectl create deployment nginx --image=nginx
+
+4. EXPOSE DEPLOYMENT
+--------------------
+kubectl expose deployment nginx --port=80 --type=NodePort
+
+5. DESCRIBE RESOURCES
+---------------------
+kubectl describe pod POD_NAME
+kubectl describe deployment nginx
+
+6. VIEW LOGS
+------------
+kubectl logs POD_NAME
+
+7. APPLY YAML
+-------------
+kubectl apply -f deployment.yaml
+
+8. SCALE APPLICATION
+--------------------
+kubectl scale deployment nginx --replicas=3
+
+9. DELETE RESOURCE
+------------------
+kubectl delete deployment nginx
+
+10. IMPORTANT TERMS
+-------------------
+Control Plane
+Worker Node
+Scheduler
+Kubelet
+API Server
+etcd
+Container Runtime
+
+PRACTICE:
+1. Install Minikube.
+2. Create an Nginx deployment.
+3. Create a service.
+4. Scale deployment.
+5. View pod logs.
+
+================================================

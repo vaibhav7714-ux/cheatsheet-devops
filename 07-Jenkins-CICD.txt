@@ -1,1 +1,143 @@
   07-Jenkins-CICD.txt
+
+================================================
+                JENKINS AND CI/CD
+================================================
+
+WHAT IS JENKINS?
+Jenkins is an automation server used to build
+and manage CI/CD pipelines.
+
+1. IMPORTANT TERMS
+------------------
+Job = Automated task
+Pipeline = Automation workflow
+Agent = Executes pipeline tasks
+Controller = Coordinates Jenkins
+Plugin = Extends Jenkins
+Jenkinsfile = Pipeline definition
+
+2. CI/CD
+--------
+CI = Continuous Integration
+CD = Continuous Delivery / Deployment
+
+3. PIPELINE STAGES
+------------------
+Code Checkout
+Build
+Test
+Package
+Deploy
+Monitor
+
+4. JENKINSFILE EXAMPLE
+----------------------
+pipeline {
+    agent any
+
+    stages {
+        stage('Build') {
+            steps {
+                echo 'Building application'
+            }
+        }
+
+        stage('Test') {
+            steps {
+                echo 'Running tests'
+            }
+        }
+
+        stage('Deploy') {
+            steps {
+                echo 'Deploying application'
+            }
+        }
+    }
+}
+
+5. POPULAR PIPELINE TOOLS
+------------------------
+Jenkins
+GitHub Actions
+GitLab CI/CD
+CircleCI
+Azure DevOps
+
+PRACTICE:
+1. Install Jenkins.
+2. Create a freestyle job.
+3. Create a pipeline.
+4. Connect GitHub repository.
+5. Run an automated build.
+
+================================================
+
+
+
+
+================================================
+              GITHUB ACTIONS NOTES
+================================================
+
+WHAT IS GITHUB ACTIONS?
+GitHub Actions is a CI/CD automation platform
+integrated into GitHub.
+
+1. IMPORTANT TERMS
+------------------
+Workflow = Automation configuration
+Event = Workflow trigger
+Job = Group of steps
+Step = Individual task
+Runner = Machine executing workflow
+Action = Reusable automation component
+
+2. WORKFLOW LOCATION
+--------------------
+.github/workflows/main.yml
+
+3. EXAMPLE WORKFLOW
+-------------------
+name: DevOps CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Print message
+        run: echo "Hello DevOps"
+
+4. IMPORTANT EVENTS
+-------------------
+push
+pull_request
+workflow_dispatch
+schedule
+
+5. IMPORTANT TERMS
+------------------
+Secrets
+Variables
+Artifacts
+Runners
+Marketplace
+
+PRACTICE:
+1. Create a workflow.
+2. Push code to GitHub.
+3. Check Actions tab.
+4. Read workflow logs.
+
+================================================

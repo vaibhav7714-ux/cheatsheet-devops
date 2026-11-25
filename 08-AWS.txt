@@ -1,1 +1,62 @@
-  08-AWS.txt
+
+================================================
+                  AWS CLOUD NOTES
+================================================
+
+WHAT IS AWS?
+Amazon Web Services is a cloud computing
+platform providing infrastructure and services.
+
+1. IMPORTANT SERVICES
+---------------------
+EC2       - Virtual servers
+S3        - Object storage
+IAM       - Access management
+VPC       - Virtual network
+RDS       - Managed database
+Lambda    - Serverless computing
+EKS       - Managed Kubernetes
+ECR       - Container registry
+Route 53  - DNS service
+CloudWatch - Monitoring
+ELB       - Load balancing
+
+2. AWS CLI
+----------
+aws --version
+aws configure
+aws sts get-caller-identity
+aws s3 ls
+aws ec2 describe-instances
+
+3. EC2
+------
+EC2 provides virtual machines in AWS.
+
+4. S3
+----
+S3 stores files and objects.
+
+5. IAM
+------
+IAM manages users, roles and permissions.
+
+6. VPC
+------
+VPC provides isolated virtual networking.
+
+7. SECURITY
+-----------
+Never upload access keys to GitHub.
+Use IAM roles and least-privilege policies.
+Enable MFA where appropriate.
+Protect secrets.
+
+PRACTICE:
+1. Explore AWS Console.
+2. Learn IAM.
+3. Create an EC2 instance.
+4. Create an S3 bucket.
+5. Explore CloudWatch.
+
+================================================

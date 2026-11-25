@@ -1,0 +1,69 @@
+15-DevOps-Projects.txt
+
+================================================
+              DEVOPS PRACTICE PROJECTS
+================================================
+
+BEGINNER PROJECTS
+-----------------
+1. Linux Server Setup
+2. GitHub Repository Management
+3. Bash Backup Script
+4. Linux User Management
+5. Log File Analysis
+
+INTERMEDIATE PROJECTS
+---------------------
+6. Dockerize a Web Application
+7. Create Docker Compose Application
+8. Jenkins CI/CD Pipeline
+9. GitHub Actions Workflow
+10. Deploy Application on AWS EC2
+
+ADVANCED PROJECTS
+-----------------
+11. Kubernetes Application Deployment
+12. Terraform AWS Infrastructure
+13. Ansible Server Automation
+14. Prometheus and Grafana Monitoring
+15. Complete CI/CD Pipeline with Docker
+
+PROJECT 1: DOCKERIZE AN APPLICATION
+-----------------------------------
+Goal:
+Run an application inside a Docker container.
+
+Steps:
+1. Create application.
+2. Write Dockerfile.
+3. Build image.
+4. Run container.
+5. Test application.
+6. Push image to registry.
+
+PROJECT 2: JENKINS CI/CD
+------------------------
+Goal:
+Automate application build and testing.
+
+Steps:
+1. Install Jenkins.
+2. Create pipeline.
+3. Connect GitHub.
+4. Configure build.
+5. Run tests.
+6. Review pipeline logs.
+
+PROJECT 3: KUBERNETES DEPLOYMENT
+--------------------------------
+Goal:
+Deploy a containerized application.
+
+Steps:
+1. Set up local Kubernetes cluster.
+2. Create Deployment.
+3. Create Service.
+4. Scale application.
+5. Inspect pods and logs.
+
+================================================

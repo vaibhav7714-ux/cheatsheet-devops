@@ -1,1 +1,95 @@
 03-Shell-Scripting.txt
+
+================================================
+             SHELL SCRIPTING NOTES
+================================================
+
+WHAT IS SHELL SCRIPTING?
+Shell scripting automates repetitive tasks
+using commands written in a script.
+
+1. CREATE SCRIPT
+----------------
+nano hello.sh
+
+#!/bin/bash
+echo "Hello DevOps Students"
+
+2. EXECUTE SCRIPT
+-----------------
+chmod +x hello.sh
+./hello.sh
+
+3. VARIABLES
+------------
+NAME="DevOps"
+echo $NAME
+
+4. USER INPUT
+-------------
+read -p "Enter your name: " NAME
+echo "Welcome $NAME"
+
+5. IF ELSE
+----------
+#!/bin/bash
+
+NUMBER=10
+
+if [ "$NUMBER" -gt 5 ]; then
+    echo "Greater than 5"
+else
+    echo "5 or smaller"
+fi
+
+6. FOR LOOP
+-----------
+for i in {1..5}
+do
+    echo $i
+done
+
+7. WHILE LOOP
+-------------
+COUNT=1
+
+while [ "$COUNT" -le 5 ]
+do
+    echo $COUNT
+    COUNT=$((COUNT+1))
+done
+
+8. FUNCTIONS
+-------------
+greet() {
+    echo "Welcome to DevOps"
+}
+
+greet
+
+9. CRON JOB
+-----------
+crontab -e
+
+Example:
+0 2 * * * /home/user/backup.sh
+
+Runs every day at 2 AM.
+
+10. IMPORTANT SYMBOLS
+---------------------
+$       Variable
+#       Comment
+&&      Run next command if previous succeeds
+||      Run next command if previous fails
+|       Pipe output
+>       Redirect output
+>>      Append output
+
+PRACTICE:
+1. Create a backup script.
+2. Check disk usage using Bash.
+3. Create a user input script.
+4. Automate a log cleanup task.
+
+================================================

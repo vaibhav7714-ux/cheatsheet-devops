@@ -1,1 +1,62 @@
 10-Ansible.txt
+
+
+================================================
+                 ANSIBLE NOTES
+================================================
+
+WHAT IS ANSIBLE?
+Ansible is an automation tool for configuration
+management and server administration.
+
+1. IMPORTANT TERMS
+------------------
+Inventory = List of managed hosts
+Playbook = YAML automation file
+Task = Individual action
+Module = Performs an operation
+Role = Reusable automation structure
+Handler = Runs when notified
+
+2. COMMANDS
+-----------
+ansible --version
+ansible-inventory --list
+ansible all -i inventory -m ping
+ansible-playbook playbook.yml
+
+3. EXAMPLE INVENTORY
+--------------------
+[webservers]
+192.168.1.10
+192.168.1.11
+
+4. EXAMPLE PLAYBOOK
+-------------------
+---
+- name: Install Nginx
+  hosts: webservers
+  become: true
+
+  tasks:
+    - name: Install Nginx
+      apt:
+        name: nginx
+        state: present
+
+5. IMPORTANT CONCEPTS
+---------------------
+Idempotency
+Configuration Management
+SSH
+Privilege Escalation
+YAML
+
+PRACTICE:
+1. Install Ansible.
+2. Create inventory.
+3. Test host connectivity.
+4. Create a playbook.
+5. Install Nginx using Ansible.
+
+================================================

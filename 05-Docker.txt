@@ -1,2 +1,135 @@
   05-Docker.txt
   
+================================================
+                  DOCKER NOTES
+================================================
+
+WHAT IS DOCKER?
+Docker is a platform used to package and run
+applications inside containers.
+
+1. IMPORTANT CONCEPTS
+---------------------
+Image = Application template
+Container = Running image instance
+Dockerfile = Image build instructions
+Registry = Stores container images
+Volume = Persistent storage
+Network = Container communication
+
+2. BASIC COMMANDS
+-----------------
+docker --version
+docker images
+docker ps
+docker ps -a
+docker pull nginx
+docker run nginx
+docker run -d -p 8080:80 nginx
+docker stop CONTAINER_ID
+docker start CONTAINER_ID
+docker restart CONTAINER_ID
+docker logs CONTAINER_ID
+docker inspect CONTAINER_ID
+docker rm CONTAINER_ID
+docker rmi IMAGE_ID
+
+3. BUILD IMAGE
+--------------
+docker build -t myapp:v1 .
+
+4. VIEW LOGS
+------------
+docker logs CONTAINER_ID
+
+5. ENTER CONTAINER
+------------------
+docker exec -it CONTAINER_ID sh
+
+6. DOCKERFILE
+-------------
+FROM nginx:alpine
+COPY index.html /usr/share/nginx/html/
+EXPOSE 80
+CMD ["nginx", "-g", "daemon off;"]
+
+7. IMPORTANT TERMS
+------------------
+Docker Hub
+Container Registry
+Docker Engine
+Docker Daemon
+Docker CLI
+Docker Volume
+
+8. DOCKER NETWORK
+-----------------
+docker network ls
+docker network create mynetwork
+docker network inspect mynetwork
+
+PRACTICE:
+1. Pull Nginx image.
+2. Run Nginx container.
+3. Open localhost:8080.
+4. View container logs.
+5. Build your own image.
+
+================================================
+
+
+
+================================================
+              DOCKER COMPOSE NOTES
+================================================
+
+WHAT IS DOCKER COMPOSE?
+Docker Compose manages multiple containers
+using one YAML configuration file.
+
+1. IMPORTANT COMMANDS
+---------------------
+docker compose version
+docker compose up
+docker compose up -d
+docker compose ps
+docker compose logs
+docker compose down
+docker compose restart
+
+2. COMPOSE FILE
+---------------
+File name: compose.yaml
+
+services:
+  web:
+    image: nginx:alpine
+    ports:
+      - "8080:80"
+    restart: unless-stopped
+
+3. MULTI-CONTAINER EXAMPLE
+--------------------------
+services:
+  app:
+    image: nginx:alpine
+    ports:
+      - "8080:80"
+
+  redis:
+    image: redis:alpine
+
+4. IMPORTANT TERMS
+------------------
+Service = Application component
+Volume = Persistent storage
+Network = Service communication
+Environment = Application configuration
+
+PRACTICE:
+1. Run Nginx using Compose.
+2. Add Redis service.
+3. View service logs.
+4. Stop all services.
+
+================================================

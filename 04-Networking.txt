@@ -1,1 +1,80 @@
 04-Networking.txt
+
+================================================
+               NETWORKING NOTES
+================================================
+
+1. WHAT IS NETWORKING?
+----------------------
+Networking allows computers and servers
+to communicate with each other.
+
+2. IMPORTANT TERMS
+------------------
+IP Address = Device network address
+DNS = Converts domain names into IP addresses
+HTTP = Web communication protocol
+HTTPS = Encrypted HTTP
+SSH = Secure remote login
+TCP = Reliable transport protocol
+UDP = Connectionless transport protocol
+Firewall = Controls network traffic
+Proxy = Intermediary between systems
+Load Balancer = Distributes traffic
+
+3. IMPORTANT PORTS
+------------------
+20/21  FTP
+22     SSH
+25     SMTP
+53     DNS
+80     HTTP
+443    HTTPS
+3306   MySQL
+5432   PostgreSQL
+6379   Redis
+8080   Common web application port
+
+4. NETWORK COMMANDS
+-------------------
+ip addr
+ping google.com
+nslookup google.com
+dig google.com
+curl -I https://google.com
+ss -tuln
+traceroute google.com
+ssh user@SERVER_IP
+
+5. OSI MODEL
+------------
+Layer 7 - Application
+Layer 6 - Presentation
+Layer 5 - Session
+Layer 4 - Transport
+Layer 3 - Network
+Layer 2 - Data Link
+Layer 1 - Physical
+
+6. HTTP STATUS CODES
+--------------------
+200 = OK
+201 = Created
+301 = Permanent Redirect
+302 = Temporary Redirect
+400 = Bad Request
+401 = Unauthorized
+403 = Forbidden
+404 = Not Found
+500 = Internal Server Error
+502 = Bad Gateway
+503 = Service Unavailable
+504 = Gateway Timeout
+
+PRACTICE:
+1. Find your local IP.
+2. Check DNS resolution.
+3. Test a website using curl.
+4. Understand HTTP status codes.
+
+================================================

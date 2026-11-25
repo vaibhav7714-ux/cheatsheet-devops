@@ -1,1 +1,65 @@
 11-Monitoring-Logging.txt
+
+================================================
+             MONITORING AND LOGGING
+================================================
+
+WHAT IS MONITORING?
+Monitoring tracks system and application health.
+
+WHAT IS LOGGING?
+Logging records application and system events.
+
+1. POPULAR TOOLS
+----------------
+Prometheus - Metrics collection
+Grafana    - Dashboards
+ELK Stack  - Log management
+Loki       - Log aggregation
+Nagios     - Infrastructure monitoring
+Datadog    - Observability platform
+
+2. IMPORTANT METRICS
+--------------------
+CPU Usage
+Memory Usage
+Disk Usage
+Network Traffic
+Response Time
+Error Rate
+Request Rate
+Availability
+
+3. LINUX COMMANDS
+-----------------
+top
+free -h
+df -h
+uptime
+vmstat
+journalctl
+journalctl -f
+
+4. PROMETHEUS
+-------------
+Collects and stores time-series metrics.
+
+5. GRAFANA
+----------
+Visualizes metrics through dashboards.
+
+6. LOGGING LEVELS
+-----------------
+DEBUG
+INFO
+WARNING
+ERROR
+CRITICAL
+
+PRACTICE:
+1. Monitor CPU usage.
+2. Check disk usage.
+3. Read system logs.
+4. Create a Grafana dashboard.
+
+================================================

@@ -1,0 +1,64 @@
+14-Linux-Troubleshooting.txt
+
+================================================
+             LINUX TROUBLESHOOTING
+================================================
+
+1. CHECK SYSTEM STATUS
+----------------------
+uptime
+free -h
+df -h
+top
+
+2. CHECK SERVICES
+-----------------
+systemctl status nginx
+journalctl -u nginx
+
+3. CHECK DISK
+-------------
+df -h
+du -sh /var/log
+
+4. CHECK NETWORK
+----------------
+ip addr
+ping google.com
+ss -tuln
+curl -I https://example.com
+
+5. CHECK MEMORY
+---------------
+free -h
+top
+
+6. CHECK PERMISSIONS
+--------------------
+ls -l file.txt
+chmod 644 file.txt
+
+7. CHECK LOGS
+-------------
+journalctl
+journalctl -xe
+
+8. COMMON PROBLEMS
+------------------
+Permission denied:
+Check file ownership and permissions.
+
+Disk full:
+Check df -h and investigate large files.
+
+Service not running:
+Check systemctl status and service logs.
+
+Website unavailable:
+Check DNS, network connectivity, ports
+and application logs.
+
+High CPU:
+Inspect processes using top.
+
+================================================

@@ -1,1 +1,99 @@
 02-Git-GitHub.txt
+
+================================================
+              GIT AND GITHUB NOTES
+================================================
+
+WHAT IS GIT?
+Git is a distributed version control system.
+
+WHAT IS GITHUB?
+GitHub is a platform for hosting Git repositories.
+
+1. BASIC COMMANDS
+-----------------
+git --version
+git config --global user.name "Your Name"
+git config --global user.email "you@example.com"
+git init
+git clone REPOSITORY_URL
+git status
+git add .
+git commit -m "Initial commit"
+git push
+git pull
+git fetch
+
+2. BRANCH MANAGEMENT
+--------------------
+git branch
+git branch feature
+git switch main
+git switch -c feature
+git merge feature
+git branch -d feature
+
+3. REMOTE MANAGEMENT
+--------------------
+git remote -v
+git remote add origin URL
+git fetch origin
+git push -u origin main
+git pull origin main
+
+4. UNDO COMMANDS
+----------------
+git restore file.txt
+git restore --staged file.txt
+git revert COMMIT_ID
+git reset --soft HEAD~1
+git stash
+git stash pop
+
+5. HISTORY
+----------
+git log
+git log --oneline
+git diff
+git show COMMIT_ID
+
+6. GIT WORKFLOW
+---------------
+Working Directory
+       |
+       v
+   git add
+       |
+       v
+   Staging Area
+       |
+       v
+  git commit
+       |
+       v
+ Local Repository
+       |
+       v
+   git push
+       |
+       v
+     GitHub
+
+7. IMPORTANT TERMS
+------------------
+Repository = Project storage
+Commit = Saved change
+Branch = Separate development line
+Merge = Combine branches
+Pull Request = Request to merge changes
+Clone = Copy remote repository
+Fork = Personal copy of another repository
+
+PRACTICE:
+1. Create Git repository.
+2. Create a branch.
+3. Make a commit.
+4. Push to GitHub.
+5. Create a pull request.
+
+================================================

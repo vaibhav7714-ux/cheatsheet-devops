@@ -1,1 +1,90 @@
  12-DevOps-Interview-Questions.txt
+
+================================================
+          DEVOPS INTERVIEW QUESTIONS
+================================================
+
+BEGINNER QUESTIONS
+------------------
+
+Q1. What is DevOps?
+Answer:
+DevOps combines development and operations
+practices to improve software delivery.
+
+Q2. What is Git?
+Answer:
+Git is a distributed version control system.
+
+Q3. What is Docker?
+Answer:
+Docker packages applications into containers.
+
+Q4. What is Kubernetes?
+Answer:
+Kubernetes orchestrates containerized applications.
+
+Q5. What is CI/CD?
+Answer:
+CI/CD automates integration, testing and delivery.
+
+Q6. What is Linux?
+Answer:
+Linux is an open-source operating system.
+
+Q7. What is Jenkins?
+Answer:
+Jenkins is an automation server.
+
+Q8. What is Terraform?
+Answer:
+Terraform is an Infrastructure as Code tool.
+
+INTERMEDIATE QUESTIONS
+----------------------
+
+Q9. Difference between Docker image and container?
+Answer:
+An image is a template; a container is a running
+instance of an image.
+
+Q10. Difference between VM and container?
+Answer:
+VMs virtualize hardware. Containers share
+the host operating system kernel.
+
+Q11. What is a Kubernetes Pod?
+Answer:
+A Pod is the smallest deployable unit.
+
+Q12. What is Infrastructure as Code?
+Answer:
+Managing infrastructure using configuration files.
+
+Q13. What is Ansible?
+Answer:
+Ansible automates configuration management.
+
+Q14. What is a Docker volume?
+Answer:
+A volume stores persistent container data.
+
+Q15. What is a Git branch?
+Answer:
+A separate line of development.
+
+ADVANCED QUESTIONS
+------------------
+
+Q16. What is Kubernetes Service?
+Q17. What is a load balancer?
+Q18. What is Terraform state?
+Q19. What is blue-green deployment?
+Q20. What is rolling deployment?
+Q21. What is container orchestration?
+Q22. What is observability?
+Q23. What is a reverse proxy?
+Q24. What is Infrastructure Drift?
+Q25. What is GitOps?
+
+================================================

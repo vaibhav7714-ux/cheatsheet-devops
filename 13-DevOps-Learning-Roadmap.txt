@@ -1,1 +1,107 @@
 13-DevOps-Learning-Roadmap.txt
+
+================================================
+              DEVOPS LEARNING ROADMAP
+================================================
+
+STAGE 1: LINUX FUNDAMENTALS
+---------------------------
+Learn:
+- Linux commands
+- Files and directories
+- Permissions
+- Processes
+- Services
+- Logs
+
+STAGE 2: GIT AND GITHUB
+-----------------------
+Learn:
+- Git basics
+- Branching
+- Merging
+- Pull requests
+- GitHub repositories
+
+STAGE 3: SHELL SCRIPTING
+-----------------------
+Learn:
+- Variables
+- Conditions
+- Loops
+- Functions
+- Cron jobs
+
+STAGE 4: NETWORKING
+-------------------
+Learn:
+- IP addresses
+- DNS
+- HTTP and HTTPS
+- SSH
+- Ports
+- Firewalls
+
+STAGE 5: DOCKER
+---------------
+Learn:
+- Images
+- Containers
+- Dockerfile
+- Volumes
+- Networks
+- Docker Compose
+
+STAGE 6: CI/CD
+--------------
+Learn:
+- Jenkins
+- GitHub Actions
+- Pipelines
+- Automated testing
+- Deployment
+
+STAGE 7: CLOUD
+--------------
+Learn:
+- AWS EC2
+- S3
+- IAM
+- VPC
+- CloudWatch
+
+STAGE 8: KUBERNETES
+-------------------
+Learn:
+- Pods
+- Deployments
+- Services
+- ConfigMaps
+- Secrets
+- Ingress
+
+STAGE 9: INFRASTRUCTURE AUTOMATION
+----------------------------------
+Learn:
+- Terraform
+- Ansible
+- Infrastructure as Code
+- Configuration management
+
+STAGE 10: MONITORING
+--------------------
+Learn:
+- Prometheus
+- Grafana
+- Logging
+- Alerting
+- Troubleshooting
+
+FINAL GOAL
+----------
+Build real-world DevOps projects.
+Practice daily.
+Understand concepts.
+Prepare for interviews.
+
+================================================
