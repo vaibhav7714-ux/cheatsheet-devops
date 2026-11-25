@@ -1,0 +1,70 @@
+
+========================================
+       LINUX COMMANDS CHEAT SHEET
+========================================
+
+1. BASIC COMMANDS
+-----------------
+pwd             - Show current directory
+ls              - List files
+ls -la          - Show hidden files
+cd folder       - Enter directory
+cd ..           - Go back
+mkdir test      - Create directory
+touch file.txt  - Create file
+cat file.txt    - Read file
+clear           - Clear terminal
+
+2. FILE MANAGEMENT
+------------------
+cp a.txt b.txt  - Copy file
+mv a.txt b.txt  - Rename file
+rm file.txt     - Delete file
+find . -name "*.txt" - Find files
+
+3. PERMISSIONS
+--------------
+chmod 755 file.sh
+chmod +x file.sh
+chown user:group file.txt
+
+4. PROCESS MANAGEMENT
+---------------------
+ps aux           - Show processes
+top              - Monitor processes
+kill PID         - Stop process
+uptime           - System uptime
+
+5. DISK AND MEMORY
+------------------
+df -h            - Disk usage
+du -sh folder    - Folder size
+free -h          - Memory usage
+
+6. NETWORKING
+-------------
+ip addr          - Show IP address
+ping google.com  - Check connectivity
+curl URL         - HTTP request
+ss -tuln         - Listening ports
+
+7. PACKAGE MANAGEMENT
+---------------------
+sudo apt update
+sudo apt upgrade
+sudo apt install nginx
+sudo apt remove nginx
+
+8. PRACTICE TASKS
+-----------------
+1. Create a directory.
+2. Create a text file.
+3. Copy the file.
+4. Rename the file.
+5. Check disk usage.
+6. Check running processes.
+7. Find your IP address.
+
+========================================
+             END OF NOTES
+========================================
